@@ -1,0 +1,4 @@
+# Git not detecting filename changes
+`git mv App.js app.js`
+`git mv App.css app.css`
+`git mv App.test.js app.test.js`
