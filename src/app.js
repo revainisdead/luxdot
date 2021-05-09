@@ -7,7 +7,7 @@ import NavBar from './navbar';
 function App() {
     return (
         <div className="App">
-            <Navbar />
+            <NavBar />
 
             <div className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
