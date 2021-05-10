@@ -35,7 +35,7 @@ function NavBar() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
-                        Test
+                        Luxdot
                     </Typography>
                     <Button color="inherit">Button</Button>
 

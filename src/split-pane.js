@@ -1,5 +1,7 @@
+import { makeStyles } from '@material-ui/core/styles';
 
 import MyClass from './MyClass';
+
 
 function assign() {
     const obj = {
@@ -81,6 +83,15 @@ function assert(condition, msg) {
     }
 }
 
+// Note: Remove styles to get user agent stylesheet to apply
+const useStyles = makeStyles((theme) => ({
+    left_sidebar: {
+        color: "black",
+        marginLeft: "5px",
+        marginRight: "5px",
+    },
+}));
+
 
 // Note: React hotreloading no longer resets css set in inspector until a real refresh
 function SplitPane() {
@@ -102,11 +113,19 @@ function SplitPane() {
 
     assign();
 
+
+
+    const classes = useStyles();
+
     return (
         <div id="split">
-
-            <div className="left">
+            <div className="left-sidebar">
+                <h3 className={classes.left_sidebar}>
+                    Testing Testing Testing
+                </h3>
             </div>
+
+            <textarea type="text" className="left"></textarea>
 
             <div className="right">
             </div>
